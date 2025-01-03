@@ -69,18 +69,12 @@ export default function RouletteWheel() {
 
   const isDisabledRoulette = isDefaultResult ? false : isRunning;
 
-  console.log("Roleta 1:", result1);
-  console.log("Roleta 2:", result2);
-  console.log("Roleta 3:", result3);
-
-  console.log(isPlayerWinner);
-
   return (
     <>
-      <h1 className="font-extrabold inline-block bg-gradient-to-r from-blue-600 via-slate-800-500 to-indigo-400 bg-clip-text text-5xl text-transparent">
+      <h1 className="font-extrabold inline-block bg-gradient-to-r from-blue-600 via-slate-800-500 to-indigo-400 bg-clip-text text-4xl md:text-5xl text-transparent">
         Teste sua sorte
       </h1>
-      <div className="flex flex-col gap-6 w-fit p-12 bg-slate-800 rounded-md">
+      <div className="flex flex-col gap-6 w-fit p-6 md:p-12 bg-slate-800 rounded-md">
         <div className="text-7xl flex gap-2 justify-center">
           <span className="bg-white p-3 rounded-lg">{finalResult1} </span>
           <span className="bg-white p-3 rounded-lg">{finalResult2}</span>
