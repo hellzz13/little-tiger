@@ -57,7 +57,7 @@ export default function RouletteWheel() {
     setTimeout(() => {
       clearInterval(interval);
       setIsRunning(false);
-    }, 5000);
+    }, 2000);
   }
 
   const finalResult1 =
